@@ -8,11 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="name-service-client" />
-        <module name="synchronization-distibuted-lock" />
+        <module name="synchronization-distributed-lock" />
         <module name="shop-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="synchronization-distibuted-lock" target="1.8" />
       <module name="synchronization-distiruted-lock" target="1.8" />
     </bytecodeTargetLevel>
   </component>
