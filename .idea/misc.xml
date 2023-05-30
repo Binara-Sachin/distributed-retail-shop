@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/shop-server/pom.xml" />
         <option value="$PROJECT_DIR$/name-service-client/pom.xml" />
         <option value="$PROJECT_DIR$/synchronization-distiruted-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/synchronization-distributed-lock/pom.xml" />
       </list>
     </option>
   </component>

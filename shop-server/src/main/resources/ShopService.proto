@@ -1,3 +1,43 @@
 syntax = "proto3";
 option java_multiple_files = true;
 package org.binara.sachin.grpc.generated;
+
+message GetStockRequest {
+  string productName = 1;
+}
+
+message GetStockResponse {
+  int32 stock = 1;
+}
+
+message AddStockRequest {
+  string productName = 1;
+  int32 quantity = 2;
+  bool isSentByPrimary = 3;
+}
+
+message AddStockResponse {
+  bool status = 1;
+}
+
+message PurchaseProductRequest {
+  string productName = 1;
+  int32 quantity = 2;
+  bool isSentByPrimary = 3;
+}
+
+message PurchaseProductResponse {
+  bool status = 1;
+}
+
+service GetStockService {
+  rpc getStock(GetStockRequest) returns (GetStockResponse);
+}
+
+service AddStockService {
+  rpc addStock(AddStockRequest) returns (AddStockResponse);
+}
+
+service PurchaseProductService {
+  rpc purchaseProduct(PurchaseProductRequest) returns (PurchaseProductResponse);
+}
